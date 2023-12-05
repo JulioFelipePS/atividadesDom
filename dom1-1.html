@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bt" type="button">CLIQUE
+        AQUI PARA MUDAR O TEXTO</button>
+        <br>
+        <p>AQUI VAI APARECER ALGUMA COISA...</p>
+        <script>
+            const bt = document.getElementById('bt')
+            const p = document.querySelector('p')
+
+            bt.addEventListener('click',()=>{
+                const nome = prompt('Digite seu nome')
+                p.innerHTML  = `<p>"E aí ${nome}! Você está deixando o seu site dinâmico.</p>`})
+
+        </script>
+</body>
+</html>

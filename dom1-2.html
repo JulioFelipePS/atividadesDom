@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            margin: 20px;
+        }
+        div{
+            margin: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="bt1" type="button">INCREMENTAR</button>
+        <br>
+        <button id="bt2" type="button">ZERAR CONTADOR,</button>
+        <br>
+        <p id="fr">O Contador está com 0 cliques</p>       
+    </div>
+    <script>
+        const bt1 = document.getElementById('bt1')
+        const bt2 = document.getElementById('bt2')
+        const p = document.getElementById('fr')
+        let c = 0
+        bt1.addEventListener('click',()=>{
+            c++
+            p.textContent = `"O contador está com ${c} cliques"`
+        })
+        bt2.addEventListener('click',()=>{
+            c=0
+            p.textContent = `"O contador está com ${c} cliques"`
+        })
+
+    </script>
+</body>
+</html>
